@@ -5,3 +5,4 @@ pdfplumber==0.11.6
 python_docx==1.1.2
 streamlit==1.45.0
 langchain_community
+youtube_transcript_api
