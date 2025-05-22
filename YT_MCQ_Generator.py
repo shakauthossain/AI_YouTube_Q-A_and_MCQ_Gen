@@ -15,19 +15,20 @@ from langchain.vectorstores import FAISS
 from langchain.chains import LLMChain
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
-from langchain.prompts.chat import (
-    ChatPromptTemplate,
-    SystemMessagePromptTemplate,
-    HumanMessagePromptTemplate
-)
+from langchain.prompts.chat import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
+
+from dotenv import load_dotenv
 
 # Page setup
 st.set_page_config(page_title="YouTube & File MCQ Generator", layout="centered")
 st.title("YouTube + File-Based Q&A and MCQ Generator")
 
+load_dotenv()
+api_key = os.getenv("GROQ_API")
+
 # Initialize LLM
 chat = ChatGroq(
-    api_key="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",  # Replace with your actual key
+    api_key=api_key,  # Replace with your actual key
     model="llama-3.3-70b-versatile",
     temperature=0.5
 )

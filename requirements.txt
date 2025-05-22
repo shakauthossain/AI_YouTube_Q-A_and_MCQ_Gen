@@ -4,3 +4,4 @@ langchain_groq==0.3.2
 pdfplumber==0.11.6
 python_docx==1.1.2
 streamlit==1.45.0
+python-dotenv==1.1.0
