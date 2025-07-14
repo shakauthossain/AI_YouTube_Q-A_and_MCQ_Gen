@@ -1,0 +1,11 @@
+chromadb==1.0.15
+fastapi==0.116.1
+fpdf==1.7.2
+langchain==0.3.26
+langchain_chroma==0.2.4
+langchain_community==0.3.27
+langchain_groq==0.3.6
+pdfplumber==0.11.7
+pydantic==2.11.7
+python-dotenv==1.1.1
+python_docx==1.2.0
